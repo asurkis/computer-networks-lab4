@@ -1,3 +1,6 @@
+
+\newpage
+
 \section{Общее задание}
 
 \subsection{Компьютер 1}
@@ -217,18 +220,22 @@ ip6tables -A OUTPUT -p icmpv6 -m length --length 1001: -j REJECT
 \end{verbatim}
 
 \subsection{Скриншоты выполнения}
-\texttt{ncat} без \texttt{iptables}
+\paragraph{\texttt{ncat} без \texttt{iptables}}
 
 \begin{center}
     \includegraphics[width=.49\textwidth]{screenshots/base-ncat-A}
     \includegraphics[width=.49\textwidth]{screenshots/base-ncat-B}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-base-ncat-client}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-base-ncat-server}
 \end{center}
 
-\texttt{ping} с полным \texttt{iptables}
+\paragraph{\texttt{ping} с полным \texttt{iptables}}
 
 \begin{center}
     \includegraphics[width=.49\textwidth]{screenshots/base-ping-blocked-A}
     \includegraphics[width=.49\textwidth]{screenshots/base-ping-blocked-B}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-ping1}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-ping4}
 \end{center}
 
 Как можно заметить, отправка и прием пакетов невозможны,
@@ -238,11 +245,50 @@ ip6tables -A OUTPUT -p icmpv6 -m length --length 1001: -j REJECT
 \begin{center}
     \includegraphics[width=.49\textwidth]{screenshots/base-ping-iptables-A}
     \includegraphics[width=.49\textwidth]{screenshots/base-ping-iptables-B}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping10}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping11}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping12}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping40}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping41}
+%    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping42}
 \end{center}
 
-\texttt{ncat} по разным протоколам:
+\texttt{\texttt{ncat} по разным протоколам:}
 
 \begin{center}
     \includegraphics[width=.49\textwidth]{screenshots/base-ncat-iptables-A}
     \includegraphics[width=.49\textwidth]{screenshots/base-ncat-iptables-B}
+%    \includegraphics{screenshots/var2-iptables-fix-ncat-tcp-server}
+%    \includegraphics{screenshots/var2-iptables-fix-ncat-tcp-client}
+%    \includegraphics{screenshots/var2-iptables-fix-ncat-udp-server}
+%    \includegraphics{screenshots/var2-iptables-fix-ncat-udp-client}
+%    \includegraphics{screenshots/var2-iptables-fix-ncat-sctp-server}
+%    \includegraphics{screenshots/var2-iptables-fix-ncat-sctp-client}
+\end{center}
+
+\paragraph{\texttt{tcpdump}}
+
+\begin{center}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-base-ncat-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-base-ncat-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-ping1-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-ping1-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping10-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping10-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping11-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping11-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping12-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping12-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping40-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping40-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping41-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping41-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping42-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ping42-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ncat-tcp-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ncat-tcp-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ncat-udp-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ncat-udp-tcpdump3}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ncat-sctp-tcpdump2}
+    \includegraphics[width=.49\textwidth]{screenshots/var2-iptables-fix-ncat-sctp-tcpdump3}
 \end{center}
